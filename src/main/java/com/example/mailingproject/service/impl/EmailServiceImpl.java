@@ -10,6 +10,8 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+
 @Service
 public class EmailServiceImpl implements EmailService {
 
@@ -21,16 +23,14 @@ public class EmailServiceImpl implements EmailService {
     private JavaMailSender javaMailSender;
 
     @Override
-    public String sendMail(MultipartFile[] file, String to, String gz, String[] cc, String subject, String body) {
+    public String sendMail(MultipartFile[] file, String[] checkBox, String subject, String body) {
         try {
             MimeMessage mimeMessage = javaMailSender.createMimeMessage();
 
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
 
             mimeMessageHelper.setFrom(email);
-            mimeMessageHelper.setTo(to);
-            mimeMessageHelper.setBcc(gz);
-            mimeMessageHelper.setCc(cc);
+            mimeMessageHelper.setCc(checkBox);
             mimeMessageHelper.setSubject(subject);
             mimeMessageHelper.setText(body);
 
@@ -39,6 +39,12 @@ public class EmailServiceImpl implements EmailService {
                         file[i].getOriginalFilename(),
                         new ByteArrayResource(file[i].getBytes()));
             }
+//
+//            for (int i = 0; i < file.length; i++) {
+//                mimeMessageHelper.addAttachment(
+//                        file[i].getName(),
+//                        file[i].getAbsoluteFile());
+//            }
 
             javaMailSender.send(mimeMessage);
 

@@ -2,14 +2,15 @@ package com.example.mailingproject.controller;
 
 import com.example.mailingproject.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-@RestController
-@RequestMapping("/mail")
+import java.io.File;
+
+
+@Controller
+@RequestMapping()
 public class EmailSendController {
 
     private EmailService emailService;
@@ -19,11 +20,17 @@ public class EmailSendController {
         this.emailService = emailService;
     }
 
-
     @PostMapping("/send")
-    public String sendMail(@RequestParam(value = "file", required = false) MultipartFile[] file, String to,
-                           String gz , String[] cc, String subject, String body) {
-        return emailService.sendMail(file, to, gz , cc, subject, body);
+    public String sendMail(@RequestParam(value = "files" , required = false ) MultipartFile[] file,
+                           @RequestParam(value = "email" , required = false) String[] checkboxValue, String subject , String body) {
+        subject = "Hello";
+        body = "GHS";
+        emailService.sendMail(file ,checkboxValue , subject , body);
+        return "page";
     }
 
+    @GetMapping()
+    public String edit(){
+        return "page";
+    }
 }

@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.body__container {
+  padding: 50px 50px;
+}
+
+/* header */
+
+.header__title {
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+.header__title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("../img/pic.png") no-repeat center;
+  top: 15px;
+  right: -20px;
+}
+
+/* accordeon */
+.accordeon {
+
+ padding: 100px;
+}
+
+.accordeon__wrapper {
+  padding: 15px;
+  background-color: rgb(230, 233, 233);
+  border: 5px solid #be9306;
+}
+
+.accordeon__section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.accordeon__button {
+  padding: 10px;
+  padding-left: 30px;
+  background-color:  #7070706e;
+  border: none;
+  margin: 5px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordeon__button:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  border: 9px solid transparent;
+  border-top: 11px solid rgb(4, 4, 4);
+  top: 6px;
+  left: 18px;
+  transform: rotate(269deg);
+}
+
+.accordeon__button:hover {
+  background-color: #8e8d8d6e;
+}
+
+.accordeon__section--current .accordeon__button:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  border: 9px solid transparent;
+  border-top: 11px solid rgb(4, 4, 4);
+  top: 14px;
+  left: 6px;
+  transform: rotate(0deg);
+}
+
+.email-list {
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 300px));
+  column-gap: 10px;
+  display: none;
+}
+
+.accordeon__section--current .email-list {
+  display: grid;
+}
+
+.email-list__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.control-button,
+.control-button--drop {
+  padding: 15px 5px;
+  margin: 10px 15px;
+  background-color: rgb(13, 78, 153);
+  border: none;
+  color: white;
+  width: 200px;
+  cursor: pointer;
+  font-size: 20px;
+  min-height: 90px;
+  border-radius: 10px;
+}
+
+.control-button--drop {
+  padding: 10px 5px;
+  width: 190px;
+  font-size: 20px;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-button:hover,
+.control-button--drop:hover {
+  background-color: rgb(99, 146, 199);
+  transition: all 0.5s ease-out;
+}
