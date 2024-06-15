@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Приложение для отправки писем</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow" />
-    <link rel="shortcut icon" href="img/pic.png" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="robots" content="index, follow"/>
+<!--    <img rel="shortcut icon" th:src="@{https://static.tildacdn.com/tild3864-3661-4766-b836-653964303338/email_1.svg}">-->
+<!--    <img rel="shortcut icon"-->
+<!--         th:src="@{https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg}"/>-->
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+
 </head>
 <body class="body">
   <div class="body__container">
@@ -822,8 +826,156 @@
             <button class="accordeon__button">Молочные хозяйства по Республике Башкирии</button>
             <ul class="accordeon__list email-list">
               <li class="email-list__item">
-                <input class="email-list__input" id="CheckBox" type="checkbox" name="email" value="checkbox">
-                <label class="email-list__label" for="CheckBox">CheckBox</label>
+                <input class="email-list__input" id="gau@milkrb.ru" type="checkbox" name="email" value="gau@milkrb.ru">
+                <label class="email-list__label" for="gau@milkrb.ru">gau@milkrb.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="dumilk2@mail.ru" type="checkbox" name="email" value="dumilk2@mail.ru">
+                <label class="email-list__label" for="dumilk2@mail.ru">dumilk2@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="dkmp02@mail.ru" type="checkbox" name="email" value="dkmp02@mail.ru">
+                <label class="email-list__label" for="dkmp02@mail.ru">dkmp02@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="karm_milk@mail.ru" type="checkbox" name="email" value="karm_milk@mail.ru">
+                <label class="email-list__label" for="karm_milk@mail.ru">karm_milk@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="mksom@mail.ru" type="checkbox" name="email" value="mksom@mail.ru">
+                <label class="email-list__label" for="mksom@mail.ru">mksom@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@mmkrb.ru" type="checkbox" name="email" value="info@mmkrb.ru">
+                <label class="email-list__label" for="info@mmkrb.ru">info@mmkrb.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="mmz@beloblako.com" type="checkbox" name="email" value="mmz@beloblako.com">
+                <label class="email-list__label" for="mmz@beloblako.com">CheckBox</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="ugmz@ufamol.ru" type="checkbox" name="email" value="ugmz@ufamol.ru">
+                <label class="email-list__label" for="ugmz@ufamol.ru">ugmz@ufamol.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="mol.dolina@mail.ru" type="checkbox" name="email" value="mol.dolina@mail.ru">
+                <label class="email-list__label" for="mol.dolina@mail.ru">mol.dolina@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="rosa@belmol.ru" type="checkbox" name="email" value="rosa@belmol.ru">
+                <label class="email-list__label" for="rosa@belmol.ru">rosa@belmol.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="druhba@yandex.ru" type="checkbox" name="email" value="druhba@yandex.ru">
+                <label class="email-list__label" for="druhba@yandex.ru">druhba@yandex.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@alex-agro.ru" type="checkbox" name="email" value="info@alex-agro.ru">
+                <label class="email-list__label" for="info@alex-agro.ru">info@alex-agro.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="filial@davlekanovo.ru" type="checkbox" name="email" value="filial@davlekanovo.ru">
+                <label class="email-list__label" for="filial@davlekanovo.ru">filial@davlekanovo.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="bashkalinina02@mail.ru" type="checkbox" name="email" value="bashkalinina02@mail.ru">
+                <label class="email-list__label" for="bashkalinina02@mail.ru">bashkalinina02@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="34745@list.ru" type="checkbox" name="email" value="34745@list.ru">
+                <label class="email-list__label" for="34745@list.ru">34745@list.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="ekopro@mail.ru" type="checkbox" name="email" value="ekopro@mail.ru">
+                <label class="email-list__label" for="ekopro@mail.ru">ekopro@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="ural.rsay@rambler.ru" type="checkbox" name="email" value="ural.rsay@rambler.ru">
+                <label class="email-list__label" for="ural.rsay@rambler.ru">ural.rsay@rambler.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="urojai65@mail.ru" type="checkbox" name="email" value="urojai65@mail.ru">
+                <label class="email-list__label" for="urojai65@mail.ru">urojai65@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="savayaprik@yandex.ru" type="checkbox" name="email" value="savayaprik@yandex.ru">
+                <label class="email-list__label" for="savayaprik@yandex.ru">savayaprik@yandex.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@sava-agro.ru" type="checkbox" name="email" value="info@sava-agro.ru">
+                <label class="email-list__label" for="info@sava-agro.ru">info@sava-agro.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="yaroslavskiy_spk2011@mail.ru" type="checkbox" name="email" value="yaroslavskiy_spk2011@mail.ru">
+                <label class="email-list__label" for="yaroslavskiy_spk2011@mail.ru">yaroslavskiy_spk2011@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spkkirowsky2010@yandex.ru" type="checkbox" name="email" value="spkkirowsky2010@yandex.ru">
+                <label class="email-list__label" for="spkkirowsky2010@yandex.ru">spkkirowsky2010@yandex.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="272561@mail.ru" type="checkbox" name="email" value="272561@mail.ru">
+                <label class="email-list__label" for="272561@mail.ru">272561@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="agronik@ufamts.ru" type="checkbox" name="email" value="agronik@ufamts.ru">
+                <label class="email-list__label" for="agronik@ufamts.ru">agronik@ufamts.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="ooopz@bk.ru" type="checkbox" name="email" value="ooopz@bk.ru">
+                <label class="email-list__label" for="ooopz@bk.ru">ooopz@bk.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="nrailia@hotmail.com" type="checkbox" name="email" value="nrailia@hotmail.com">
+                <label class="email-list__label" for="nrailia@hotmail.com">nrailia@hotmail.com</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spk_heroi@mail.ru" type="checkbox" name="email" value="spk_heroi@mail.ru">
+                <label class="email-list__label" for="spk_heroi@mail.ru">spk_heroi@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="neral-matrix@mail.ru" type="checkbox" name="email" value="neral-matrix@mail.ru">
+                <label class="email-list__label" for="neral-matrix@mail.ru">neral-matrix@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="salimga@bk.ru" type="checkbox" name="email" value="salimga@bk.ru">
+                <label class="email-list__label" for="salimga@bk.ru">salimga@bk.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="kruptat@mail.ru" type="checkbox" name="email" value="kruptat@mail.ru">
+                <label class="email-list__label" for="kruptat@mail.ru">kruptat@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spksalavat.2011@mail.ru" type="checkbox" name="email" value="spksalavat.2011@mail.ru">
+                <label class="email-list__label" for="spksalavat.2011@mail.ru">spksalavat.2011@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="alga0121@yandex.ru" type="checkbox" name="email" value="alga0121@yandex.ru">
+                <label class="email-list__label" for="alga0121@yandex.ru">alga0121@yandex.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="artemida_agro@mail.ru" type="checkbox" name="email" value="artemida_agro@mail.ru">
+                <label class="email-list__label" for="artemida_agro@mail.ru">artemida_agro@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="melmol@narod.ru" type="checkbox" name="email" value="melmol@narod.ru">
+                <label class="email-list__label" for="melmol@narod.ru">melmol@narod.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="sokolov@spkbazi.ru" type="checkbox" name="email" value="sokolov@spkbazi.ru">
+                <label class="email-list__label" for="sokolov@spkbazi.ru">sokolov@spkbazi.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@allat.ru" type="checkbox" name="email" value="info@allat.ru">
+                <label class="email-list__label" for="info@allat.ru">info@allat.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spk_len@mail.ru" type="checkbox" name="email" value="spk_len@mail.ru">
+                <label class="email-list__label" for="spk_len@mail.ru">spk_len@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="svoe-nashe@mail.ru" type="checkbox" name="email" value="svoe-nashe@mail.ru">
+                <label class="email-list__label" for="svoe-nashe@mail.ru">svoe-nashe@mail.ru</label>
               </li>
             </ul>
           </div>
@@ -833,8 +985,96 @@
             <button class="accordeon__button">Молочные хозяйства Удмуртской Области</button>
             <ul class="accordeon__list email-list">
               <li class="email-list__item">
-                <input class="email-list__input" id="CheckBox" type="checkbox" name="email" value="checkbox">
-                <label class="email-list__label" for="CheckBox">CheckBox</label>
+                <input class="email-list__input" id="MOLGWARD@RAMBLER.RU" type="checkbox" name="email" value="MOLGWARD@RAMBLER.RU">
+                <label class="email-list__label" for="MOLGWARD@RAMBLER.RU">MOLGWARD@RAMBLER.RU</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spkkzarja2@udm.net" type="checkbox" name="email" value="spkkzarja2@udm.net">
+                <label class="email-list__label" for="spkkzarja2@udm.net">spkkzarja2@udm.net</label>
+              </li>
+              <li class="email-list__item">
+              <input class="email-list__input" id="oao-azina@yandex.ru" type="checkbox" name="email" value="oao-azina@yandex.ru">
+              <label class="email-list__label" for="oao-azina@yandex.ru">oao-azina@yandex.ru</label>
+            </li>
+              <li class="email-list__item">
+              <input class="email-list__input" id="ribhozbuh@mail.ru" type="checkbox" name="email" value="ribhozbuh@mail.ru">
+              <label class="email-list__label" for="ribhozbuh@mail.ru">ribhozbuh@mail.ru</label>
+            </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="mozhgasyr@udm.net" type="checkbox" name="email" value="mozhgasyr@udm.net">
+                <label class="email-list__label" for="mozhgasyr@udm.net">mozhgasyr@udm.net</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="secretar@mozhgasyr.ru" type="checkbox" name="email" value="secretar@mozhgasyr.ru">
+                <label class="email-list__label" for="secretar@mozhgasyr.ru">secretar@mozhgasyr.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="mozhgasyrmoskva@gmail.com" type="checkbox" name="email" value="mozhgasyrmoskva@gmail.com">
+                <label class="email-list__label" for="mozhgasyrmoskva@gmail.com">mozhgasyrmoskva@gmail.com</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spk_udmurt@mail.ru" type="checkbox" name="email" value="spk_udmurt@mail.ru">
+                <label class="email-list__label" for="spk_udmurt@mail.ru">spk_udmurt@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@uva-moloko.ru" type="checkbox" name="email" value="info@uva-moloko.ru">
+                <label class="email-list__label" for="info@uva-moloko.ru">info@uva-moloko.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="milkovo@uva-moloko.ru" type="checkbox" name="email" value="milkovo@uva-moloko.ru">
+                <label class="email-list__label" for="milkovo@uva-moloko.ru">milkovo@uva-moloko.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="milkovo@inbox.ru" type="checkbox" name="email" value="milkovo@inbox.ru">
+                <label class="email-list__label" for="milkovo@inbox.ru">milkovo@inbox.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spk-kalinina@mail.ru" type="checkbox" name="email" value="spk-kalinina@mail.ru">
+                <label class="email-list__label" for="spk-kalinina@mail.ru">spk-kalinina@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spk.svoboda@yandex.ru" type="checkbox" name="email" value="spk.svoboda@yandex.ru">
+                <label class="email-list__label" for="spk.svoboda@yandex.ru">spk.svoboda@yandex.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="uva-drugba@rambler.ru" type="checkbox" name="email" value="uva-drugba@rambler.ru">
+                <label class="email-list__label" for="uva-drugba@rambler.ru">uva-drugba@rambler.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="agroniva2013@mail.ru" type="checkbox" name="email" value="agroniva2013@mail.ru">
+                <label class="email-list__label" for="agroniva2013@mail.ru">agroniva2013@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="zaoshmes@mail.ru" type="checkbox" name="email" value="zaoshmes@mail.ru">
+                <label class="email-list__label" for="zaoshmes@mail.ru">zaoshmes@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="oovera@udmnet.ru" type="checkbox" name="email" value="oovera@udmnet.ru">
+                <label class="email-list__label" for="oovera@udmnet.ru">oovera@udmnet.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="chutyrsky@yandex.ru" type="checkbox" name="email" value="chutyrsky@yandex.ru">
+                <label class="email-list__label" for="chutyrsky@yandex.ru">chutyrsky@yandex.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="voshodsh@mail.ru" type="checkbox" name="email" value="voshodsh@mail.ru">
+                <label class="email-list__label" for="voshodsh@mail.ru">voshodsh@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="rodina-2009@udm.net" type="checkbox" name="email" value="rodina-2009@udm.net">
+                <label class="email-list__label" for="rodina-2009@udm.net">rodina-2009@udm.net</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="office@izhmoloko.ru" type="checkbox" name="email" value="office@izhmoloko.ru">
+                <label class="email-list__label" for="office@izhmoloko.ru">office@izhmoloko.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="office@milkom-komos.ru" type="checkbox" name="email" value="office@milkom-komos.ru">
+                <label class="email-list__label" for="office@milkom-komos.ru">office@milkom-komos.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="igramol@mail.ru" type="checkbox" name="email" value="igramol@mail.ru">
+                <label class="email-list__label" for="igramol@mail.ru">igramol@mail.ru</label>
               </li>
             </ul>
           </div>
@@ -844,12 +1084,225 @@
             <button class="accordeon__button">Молочные хозяйства по Челябинской Области</button>
             <ul class="accordeon__list email-list">
               <li class="email-list__item">
-                <input class="email-list__input" id="CheckBox" type="checkbox" name="email" value="checkbox">
-                <label class="email-list__label" for="CheckBox">CheckBox</label>
+                <input class="email-list__input" id="secretary@moloko74.ru" type="checkbox" name="email" value="secretary@moloko74.ru">
+                <label class="email-list__label" for="secretary@moloko74.ru">secretary@moloko74.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="supply_chel@rossmol.ru" type="checkbox" name="email" value="supply_chel@rossmol.ru">
+                <label class="email-list__label" for="supply_chel@rossmol.ru">supply_chel@rossmol.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spspsk@mail.ru" type="checkbox" name="email" value="spspsk@mail.ru">
+                <label class="email-list__label" for="spspsk@mail.ru">spspsk@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spkkoelga@mail.ru" type="checkbox" name="email" value="spkkoelga@mail.ru">
+                <label class="email-list__label" for="spkkoelga@mail.ru">spkkoelga@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spkkoelga.1@mail.ru" type="checkbox" name="email" value="spkkoelga.1@mail.ru">
+                <label class="email-list__label" for="spkkoelga.1@mail.ru">spkkoelga.1@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spkkoelga.zam@mail.ru" type="checkbox" name="email" value="spkkoelga.zam@mail.ru">
+                <label class="email-list__label" for="spkkoelga.zam@mail.ru">spkkoelga.zam@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="spkkoelga.urist@mail.ru" type="checkbox" name="email" value="spkkoelga.urist@mail.ru">
+                <label class="email-list__label" for="spkkoelga.urist@mail.ru">spkkoelga.urist@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="plem_zav@mail.ru" type="checkbox" name="email" value="plem_zav@mail.ru">
+                <label class="email-list__label" for="plem_zav@mail.ru">plem_zav@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="agro.firma@mail.ru" type="checkbox" name="email" value="agro.firma@mail.ru">
+                <label class="email-list__label" for="agro.firma@mail.ru">agro.firma@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="olimp55@rambler.ru" type="checkbox" name="email" value="olimp55@rambler.ru">
+                <label class="email-list__label" for="olimp55@rambler.ru">olimp55@rambler.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="troickoe08@mail.ru" type="checkbox" name="email" value="troickoe08@mail.ru">
+                <label class="email-list__label" for="troickoe08@mail.ru">troickoe08@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="agrofirma@ariant.ru" type="checkbox" name="email" value="agrofirma@ariant.ru">
+                <label class="email-list__label" for="agrofirma@ariant.ru">agrofirma@ariant.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="sarafanovo_spk@mail.ru" type="checkbox" name="email" value="sarafanovo_spk@mail.ru">
+                <label class="email-list__label" for="sarafanovo_spk@mail.ru">sarafanovo_spk@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@podovinnoe.ru" type="checkbox" name="email" value="info@podovinnoe.ru">
+                <label class="email-list__label" for="info@podovinnoe.ru">info@podovinnoe.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="snab@podovinnoe.ru" type="checkbox" name="email" value="snab@podovinnoe.ru">
+                <label class="email-list__label" for="snab@podovinnoe.ru">snab@podovinnoe.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="sh-beregovoi@mail.ru" type="checkbox" name="email" value="sh-beregovoi@mail.ru">
+                <label class="email-list__label" for="sh-beregovoi@mail.ru">sh-beregovoi@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="zakupravis@mail.ru" type="checkbox" name="email" value="zakupravis@mail.ru">
+                <label class="email-list__label" for="zakupravis@mail.ru">zakupravis@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="sxp_krasnoarm@mail.ru" type="checkbox" name="email" value="sxp_krasnoarm@mail.ru">
+                <label class="email-list__label" for="sxp_krasnoarm@mail.ru">sxp_krasnoarm@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="zary.2006@mail.ru" type="checkbox" name="email" value="zary.2006@mail.ru">
+                <label class="email-list__label" for="zary.2006@mail.ru">zary.2006@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="SCRMILK@MAIL.RU" type="checkbox" name="email" value="SCRMILK@MAIL.RU">
+                <label class="email-list__label" for="SCRMILK@MAIL.RU">SCRMILK@MAIL.RU</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="vbaryshnikov@milk74.ru" type="checkbox" name="email" value="vbaryshnikov@milk74.ru">
+                <label class="email-list__label" for="vbaryshnikov@milk74.ru">vbaryshnikov@milk74.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="516726305@mail.ru" type="checkbox" name="email" value="516726305@mail.ru">
+                <label class="email-list__label" for="516726305@mail.ru">516726305@mail.ru</label>
+              </li>
+            </ul>
+        </div>
+         <!--Комбикормовые заводы РТ -->
+         <div class="accordion__section">
+           <h2 class="accordeon__title visually-hidden">Комбикормовые заводы Республики Татарстан</h2>
+           <button class="accordeon__button">Комбикормовые заводы Республики Татарстан</button>
+           <ul class="accordeon__list email-list">
+             <li class="email-list__item">
+               <input class="email-list__input" id="elevator@chelny-broiler.ru" type="checkbox" name="email" value="elevator@chelny-broiler.ru">
+               <label class="email-list__label" for="elevator@chelny-broiler.ru">elevator@chelny-broiler.ru</label>
+             </li>
+             <li class="email-list__item">
+               <input class="email-list__input" id="hpp-aktan@yandex.ru" type="checkbox" name="email" value="hpp-aktan@yandex.ru">
+               <label class="email-list__label" for="hpp-aktan@yandex.ru">hpp-aktan@yandex.ru</label>
+             </li>
+             <li class="email-list__item">
+               <input class="email-list__input" id="mail@kazanzerno.ru" type="checkbox" name="email" value="mail@kazanzerno.ru">
+               <label class="email-list__label" for="mail@kazanzerno.ru">mail@kazanzerno.ru</label>
+             </li>
+             <li class="email-list__item">
+               <input class="email-list__input" id="kazmelnica@mail.ru" type="checkbox" name="email" value="kazmelnica@mail.ru">
+               <label class="email-list__label" for="kazmelnica@mail.ru">kazmelnica@mail.ru</label>
+             </li>
+             <li class="email-list__item">
+               <input class="email-list__input" id="info@sl-agro.ru" type="checkbox" name="email" value="info@sl-agro.ru">
+               <label class="email-list__label" for="info@sl-agro.ru">info@sl-agro.ru</label>
+             </li>
+             <li class="email-list__item">
+               <input class="email-list__input" id="zagitn@mail.ru" type="checkbox" name="email" value="zagitn@mail.ru">
+               <label class="email-list__label" for="zagitn@mail.ru">zagitn@mail.ru</label>
+             </li>
+             <li class="email-list__item">
+               <input class="email-list__input" id="sergey_mich.isaevekoniva-apk.com" type="checkbox" name="email" value="sergey_mich.isaev@ekoniva-apk.com">
+               <label class="email-list__label" for="sergey_mich.isaev@ekoniva-apk.com">sergey_mich.isaev@ekoniva-apk.com</label>
+           </ul>
+         </div>
+          <!--Комбикормовые заводы Башкирской области -->
+          <div class="accordion__section">
+            <h2 class="accordeon__title visually-hidden">Комбикормовые заводы Башкирской области</h2>
+            <button class="accordeon__button">Комбикормовые заводы Башкирской области</button>
+            <ul class="accordeon__list email-list">
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@rusgrain.ru" type="checkbox" name="email" value="info@rusgrain.ru">
+                <label class="email-list__label" for="info@rusgrain.ru">info@rusgrain.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@agroline-ufa.ru" type="checkbox" name="email" value="info@agroline-ufa.ru">
+                <label class="email-list__label" for="info@agroline-ufa.ru">info@agroline-ufa.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="info.ykxp@rusgrain.ru" type="checkbox" name="email" value="info.ykxp@rusgrain.ru">
+                <label class="email-list__label" for="info.ykxp@rusgrain.ru">info.ykxp@rusgrain.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="uralbiovet@uralbiovet.ru" type="checkbox" name="email" value="uralbiovet@uralbiovet.ru">
+                <label class="email-list__label" for="uralbiovet@uralbiovet.ru">uralbiovet@uralbiovet.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="tdekoprod@mail.ru" type="checkbox" name="email" value="tdekoprod@mail.ru">
+                <label class="email-list__label" for="tdekoprod@mail.ru">tdekoprod@mail.ru</label>
               </li>
             </ul>
           </div>
-        </div>
+          <!--Комбикормовые заводы челябинской области -->
+          <div class="accordion__section">
+            <h2 class="accordeon__title visually-hidden">Комбикормовые заводы челябинской области</h2>
+            <button class="accordeon__button">Комбикормовые заводы челябинской области</button>
+            <ul class="accordeon__list email-list">
+              <li class="email-list__item">
+                <input class="email-list__input" id="info@sitno.ru" type="checkbox" name="email" value="info@sitno.ru">
+                <label class="email-list__label" for="info@sitno.ru">info@sitno.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="okkorminfo@mail.ru" type="checkbox" name="email" value="okkorminfo@mail.ru">
+                <label class="email-list__label" for="okkorminfo@mail.ru">okkorminfo@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="ooo-kzk@mail.ru" type="checkbox" name="email" value="ooo-kzk@mail.ru">
+                <label class="email-list__label" for="ooo-kzk@mail.ru">ooo-kzk@mail.ru</label>
+              </li>
+            </ul>
+          </div>
+          <!--Комбикормовые заводы Удмуртской республики -->
+          <div class="accordion__section">
+            <h2 class="accordeon__title visually-hidden">Комбикормовые заводы Удмуртской республики</h2>
+            <button class="accordeon__button">Комбикормовые заводы Удмуртской республики</button>
+            <ul class="accordeon__list email-list">
+              <li class="email-list__item">
+                <input class="email-list__input" id="kormaudm@mail.ru" type="checkbox" name="email" value="kormaudm@mail.ru">
+                <label class="email-list__label" for="kormaudm@mail.ru">kormaudm@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="office@kombi-korm.ru" type="checkbox" name="email" value="office@kombi-korm.ru">
+                <label class="email-list__label" for="office@kombi-korm.ru">office@kombi-korm.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="sale@1korm.com" type="checkbox" name="email" value="sale@1korm.com">
+                <label class="email-list__label" for="sale@1korm.com">sale@1korm.com</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="krestyanskiy@internet.ru" type="checkbox" name="email" value="krestyanskiy@internet.ru">
+                <label class="email-list__label" for="krestyanskiy@internet.ru">krestyanskiy@internet.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="office@raps-oil.ru" type="checkbox" name="email" value="office@raps-oil.ru">
+                <label class="email-list__label" for="office@raps-oil.ru">office@raps-oil.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="agro@ats18.ru" type="checkbox" name="email" value="agro@ats18.ru">
+                <label class="email-list__label" for="agro@ats18.ru">agro@ats18.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="ev.seleznev@mail.ru" type="checkbox" name="email" value="ev.seleznev@mail.ru">
+                <label class="email-list__label" for="ev.seleznev@mail.ru">ev.seleznev@mail.ru</label>
+              </li>
+              <li class="email-list__item">
+                <input class="email-list__input" id="altay-korma@yandex.ru" type="checkbox" name="email" value="altay-korma@yandex.ru">
+                <label class="email-list__label" for="altay-korma@yandex.ru">altay-korma@yandex.ru</label>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+         </div>
+
         <div class="accordeon__controls control">
           <button class="control-button control-button--sendall" id="sendall">Выбрать все</button>
           <button class="control-button control-button--selected" id="submit" type="submit">Кнопка для отправки</button>
@@ -857,6 +1310,7 @@
             <input class="control-button control-button--files visually-hidden" type="file" id="files" name="files" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png,image/jpeg">
             <label for="files" class="control-button--drop">Добавить файл</label>
           </div>
+
         </div>
        </form>
       </section>
@@ -865,6 +1319,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" th:src="@{../static/js/script.js}"></script>
 </body>
 </html>

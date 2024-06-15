@@ -26,7 +26,7 @@ public class EmailSendController {
         subject = "Hello";
         body = "GHS";
         emailService.sendMail(file ,checkboxValue , subject , body);
-        return "page";
+        return "sendMessage";
     }
 
     @GetMapping()
