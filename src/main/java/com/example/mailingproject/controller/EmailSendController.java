@@ -10,7 +10,7 @@ import java.io.File;
 
 
 @Controller
-@RequestMapping()
+@RequestMapping("/se")
 public class EmailSendController {
 
     private EmailService emailService;
@@ -26,11 +26,11 @@ public class EmailSendController {
         subject = "Hello";
         body = "GHS";
         emailService.sendMail(file ,checkboxValue , subject , body);
-        return "sendMessage";
+        return "redirect:";
     }
 
     @GetMapping()
     public String edit(){
-        return "page";
+        return "page2";
     }
 }

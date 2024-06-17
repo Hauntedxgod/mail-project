@@ -21,11 +21,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let checked = document.getElementsByTagName("input");
 
-        for (var i = 0, max = checked.length; i < max; i++){
+        for (let i = 0, max = checked.length; i < max; i++){
             if (checked[i].type === 'checkbox')
                 checked[i].checked = true;
         }
     })
-  });
 
+    let accordeon = document.getElementById('accordeon')
+    accordeon.addEventListener('click' , (evt) => {
+        if(evt.target.classList.contains('email-list__label')) {
+            let btn = evt.target
+            let currentBlock = btn.closest('div.accordeon__section')
+            let currentInputs = Array.from(currentBlock.getElementsByClassName('email-list__input'));
+
+            btn.addEventListener('click', () => {
+            currentInputs.forEach((i)=> {
+                if(!i.hasAttribute('checked')) {
+                    i.setAttribute('checked','checked')
+                }
+                else {
+                    i.removeAttribute('checked')
+                }
+            });
+
+            })
+
+        }
+        else {
+        return
+        }
+  });
+});
 

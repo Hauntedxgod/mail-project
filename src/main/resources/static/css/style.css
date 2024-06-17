@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -23,6 +25,10 @@ h1,h2,h3,h4 {
   margin: 0;
 }
 
+input {
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,7 +44,6 @@ h1,h2,h3,h4 {
 
 .body__container {
   padding: 50px 50px;
-  background-color: #F9F9F9;
 }
 
 /* header */
@@ -57,7 +62,7 @@ h1,h2,h3,h4 {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: url("../img/email.svg") no-repeat center;
+  background: url("../img/pic.png") no-repeat center;
   top: 15px;
   right: -20px;
 }
@@ -65,29 +70,25 @@ h1,h2,h3,h4 {
 /* accordeon */
 .accordeon {
 
-  padding: 100px;
+ padding: 100px;
 }
 
 .accordeon__wrapper {
   padding: 15px;
-  background-color: rgb(255 255 255);
-  border: 4px solid #F2F2F4;
-  border-radius: 15px;
-  box-shadow: rgb(149 157 165 / 5%) 0px 10px 30px;
+  background-color: rgb(230, 233, 233);
+  border: 5px solid #be9306;
 }
 
 .accordeon__section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* background-color: #000; */
 }
 
 .accordeon__button {
   padding: 10px;
   padding-left: 30px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
+  background-color:  #7070706e;
   border: none;
   margin: 5px;
   text-align: left;
@@ -101,18 +102,15 @@ h1,h2,h3,h4 {
   position: absolute;
   width: 0px;
   height: 10px;
-  border: 8px solid transparent;
-  border-top: 11px solid rgb(147, 147, 147);
-  top: 3px;
+  border: 9px solid transparent;
+  border-top: 11px solid rgb(4, 4, 4);
+  top: 6px;
   left: 18px;
   transform: rotate(269deg);
-  border-radius: 5px;
 }
 
 .accordeon__button:hover {
-  background-color: #007DFE;
-  color: #ffff;
-  /* border-top: 11px solid rgb(4, 4, 4); */
+  background-color: #8e8d8d6e;
 }
 
 .accordeon__section--current .accordeon__button:before {
@@ -121,10 +119,45 @@ h1,h2,h3,h4 {
   width: 0px;
   height: 10px;
   border: 9px solid transparent;
-  border-top: 11px solid rgb(0 0 0);
-  top: 13px;
-  left: 8px;
+  border-top: 11px solid rgb(4, 4, 4);
+  top: 14px;
+  left: 6px;
   transform: rotate(0deg);
+}
+
+.accordeon__prime-check {
+  display: none;
+}
+
+.accordeon__section--current .accordeon__prime-check {
+  display: block;
+}
+
+.accordeon__prime-check label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0 auto;
+  background-color: rgb(13, 78, 153);
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.accordeon__prime-check label:hover {
+  background-color: rgb(99, 146, 199);
+  transition: all 0.5s ease-out;
+}
+
+
+.accordeon__prime-check input {
+  width: 20px;
+  height: 20px;
 }
 
 .email-list {
@@ -157,24 +190,21 @@ h1,h2,h3,h4 {
 .control-button--drop {
   padding: 15px 5px;
   margin: 10px 15px;
-  background-color: #1A1D1F;
+  background-color: rgb(13, 78, 153);
   border: none;
   color: white;
   width: 200px;
   cursor: pointer;
-  font-size: 15px;
-  min-height: 60px;
+  font-size: 20px;
+  min-height: 90px;
   border-radius: 10px;
-  border-radius: 55px;
-  transition: all 0.2s ease-out;
-  /* font-weight: 600; */
 }
 
 .control-button--drop {
   padding: 10px 5px;
   width: 190px;
-  font-size: 15px;
-  min-height: 40px;
+  font-size: 20px;
+  min-height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,8 +212,6 @@ h1,h2,h3,h4 {
 
 .control-button:hover,
 .control-button--drop:hover {
-  background-color: #007DFE;
-  transition: all 0.2s ease-out;
-  /* margin-bottom: 15px; */
-  box-shadow: rgb(149 157 165 / 5%) 0px 10px 30px;
+  background-color: rgb(99, 146, 199);
+  transition: all 0.5s ease-out;
 }
