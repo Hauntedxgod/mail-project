@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let accordeon = document.getElementById('accordeon')
     accordeon.addEventListener('click' , (evt) => {
-        if(evt.target.classList.contains('email-list__label')) {
+        if(evt.target.classList.contains('email-list__button')) {
             let btn = evt.target
             let currentBlock = btn.closest('div.accordeon__section')
             let currentInputs = Array.from(currentBlock.getElementsByClassName('email-list__input'));
