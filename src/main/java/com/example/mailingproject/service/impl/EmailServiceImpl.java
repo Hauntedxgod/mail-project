@@ -39,12 +39,6 @@ public class EmailServiceImpl implements EmailService {
                         file[i].getOriginalFilename(),
                         new ByteArrayResource(file[i].getBytes()));
             }
-//
-//            for (int i = 0; i < file.length; i++) {
-//                mimeMessageHelper.addAttachment(
-//                        file[i].getName(),
-//                        file[i].getAbsoluteFile());
-//            }
 
             javaMailSender.send(mimeMessage);
 

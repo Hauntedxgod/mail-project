@@ -15,17 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    let sendAll = document.getElementById(['sendall']);
-    sendAll.addEventListener('click', (evt) => {
-        evt.preventDefault();
-
-        let checked = document.getElementsByTagName("input");
-
-        for (let i = 0, max = checked.length; i < max; i++){
-            if (checked[i].type === 'checkbox')
-                checked[i].checked = true;
-        }
-    })
+    // let sendAll = document.getElementById(['sendall']);
+    // sendAll.addEventListener('click', (evt) => {
+    //     evt.preventDefault();
+    //
+    //     let checked = document.getElementsByTagName("input");
+    //
+    //     for (let i = 0, max = checked.length; i < max; i++){
+    //         if (checked[i].type === 'checkbox')
+    //             checked[i].checked = true;
+    //     }
+    // })
 
     let accordeon = document.getElementById('accordeon')
     accordeon.addEventListener('click' , (evt) => {

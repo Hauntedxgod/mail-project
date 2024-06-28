@@ -137,21 +137,40 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 15px;
-  font-size: 20px;
+  /* column-gap: 15px; */
+  font-size: 15px;
   line-height: 40px;
   margin: 0 auto;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(0 0 0 / 10%);
   border-radius: 10px;
-  width: 200px;
-  padding: 15px 30px;
+  width: calc(100% - 10px);
+  padding: 15px 0px;
   cursor: pointer;
+  border-radius: 100px;
+  height: 20px;
+  transition: all 0.2s ease-out;
+  /* left: 5px; */
+  margin-left: 5px;
+  /* font-weight: 600; */
+  /* border: solid 1px #000; */
+  /* border-width: 1px; */
+
+  /* правки */
+  width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #1A1D1F;
+
 }
 
 .accordeon__prime-check label:hover {
   background-color: rgb(99, 146, 199);
   transition: all 0.5s ease-out;
+  background-color: #007DFE;
+  transition: all 0.2s ease-out;
+  box-shadow: rgb(149 157 165 / 5%) 0px 10px 30px;
+  color: white;
+  /* font-weight: 500; */
 }
 
 .accordeon__prime-check {
@@ -160,6 +179,7 @@ input {
 
 .accordeon__section--current .accordeon__prime-check {
   display: block;
+  padding-bottom: 20px;
 }
 
 .accordeon__prime-check input {
@@ -173,6 +193,7 @@ input {
   grid-template-columns: repeat(4, minmax(100px, 300px));
   column-gap: 10px;
   display: none;
+  padding-bottom: 20px;
 }
 
 .accordeon__section--current .email-list {
@@ -192,6 +213,8 @@ input {
   align-items: center;
   margin-top: 15px;
 }
+
+
 
 .control-button,
 .control-button--drop {

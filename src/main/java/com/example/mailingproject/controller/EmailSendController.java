@@ -31,6 +31,6 @@ public class EmailSendController {
 
     @GetMapping()
     public String edit(){
-        return "page";
+        return "page3";
     }
 }
