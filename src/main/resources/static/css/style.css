@@ -289,7 +289,6 @@ input {
   }
   .email-list__item {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column-reverse;
     align-items: center;
     padding: 10px;
@@ -297,8 +296,9 @@ input {
   }
 
   .email-list__input {
-    width: 30px;
-    height: 30px;
+    flex-shrink: 0;
+    min-width: 30px;
+    min-height: 30px;
     flex-shrink: unset;
     word-wrap: break-word;
   }
